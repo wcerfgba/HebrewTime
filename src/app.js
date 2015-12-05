@@ -154,8 +154,8 @@ function getTimes(date, lat, lng) {
   var jd = getJD(date.getDate(), date.getMonth(), date.getFullYear());
   var tz = date.getTimezoneOffset();
   
-  var rise = Math.floor(calcSunriseSetUTC(1, jd, lat, lng) + (tz * 60));
-  var set = Math.floor(calcSunriseSetUTC(0, jd, lat, lng) + (tz * 60));
+  var rise = Math.floor(calcSunriseSetUTC(1, jd, lat, lng) + tz);
+  var set = Math.floor(calcSunriseSetUTC(0, jd, lat, lng) + tz);
   return { RISEMINS: rise,
           SETMINS: set };
 }
