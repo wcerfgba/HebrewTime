@@ -1,0 +1,26 @@
+{
+    "appKeys": {
+        "RISEMINS": 0,
+        "SETMINS": 1
+    },
+    "capabilities": [
+        "location"
+    ],
+    "companyName": "John Preston",
+    "longName": "HebrewTime",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "HebrewTime",
+    "targetPlatforms": [
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "c642c1e7-959b-46d3-8811-d43d791c003c",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": true
+    }
+}
