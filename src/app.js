@@ -154,8 +154,8 @@ function getTimes(date, lat, lng) {
   var jd = getJD(date.getDate(), date.getMonth(), date.getFullYear());
   var tz = date.getTimezoneOffset();
   
-  var rise = Math.floor(calcSunriseSetUTC(1, jd, lat, lng) + tz);
-  var set = Math.floor(calcSunriseSetUTC(0, jd, lat, lng) + tz);
+  var rise = Math.floor(calcSunriseSetUTC(1, jd, lat, lng) - tz);
+  var set = Math.floor(calcSunriseSetUTC(0, jd, lat, lng) - tz);
   return { RISEMINS: rise,
           SETMINS: set };
 }
@@ -172,8 +172,8 @@ function msgTimeoutLoop() {
     var startdate = new Date(date.toDateString());
     var time = date.getTime() - startdate.getTime();
     
-    console.log(time + ", " + today.RISEMINS + ", " + today.RISEMINS * MINSMSECS);
-    console.log(pos.coords.latitude + ", " + pos.coords.longitude);
+    //console.log(time + ", " + today.RISEMINS + ", " + today.RISEMINS * MINSMSECS);
+    //console.log(pos.coords.latitude + ", " + pos.coords.longitude);
     
     if (time < today.RISEMINS * MINSMSECS) {
       Pebble.sendAppMessage({

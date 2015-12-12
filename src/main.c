@@ -77,7 +77,7 @@ static void panel_update_handler(Layer *layer, GContext *ctx) {
       rad = 3;
     } else {
       graphics_context_set_fill_color(ctx, GColorDarkGray);
-      rad = 2;
+      rad = 1;
     }
     
     GPoint dot = (GPoint) {
