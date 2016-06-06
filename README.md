@@ -1,6 +1,8 @@
 HebrewTime Pebble watchface
 ===========================
 
+![screenshot](https://www.filepicker.io/api/file/OmKraeyGRkWGtU97Nm63/convert?h=168&w=144)
+
 A Hebrew hour is defined as 1/12th of the time between sunset and sunrise, or 
 1/12th of the time between sunrise and sunset. This is a analogue watchface for 
 Pebble smartwatches that shows the positions of the 24 Hebrew hours, along with 
